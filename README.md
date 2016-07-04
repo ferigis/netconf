@@ -3,7 +3,7 @@
 
 __Authors:__ Felipe Ripoll. ([`ferigis@gmail.com`](mailto:ferigis@gmail.com)).
 
-This project is an implementation of the Netconf specification [RFC6241](https://tools.ietf.org/html/rfc6241)
+This project is an implementation of the Netconf specification [RFC6241](https://tools.ietf.org/html/rfc6241) written in Erlang
 
 That code was inspired in [enetconf](https://github.com/FlowForwarding/enetconf) library.
 
@@ -24,11 +24,11 @@ In order to config the Public Key Authentication you can read [this](http://erla
 If you want to use the user/password mechanism you have to provide a list of tuples `{user, password}` in the configuration file, with the name `ssh_credentials`. ie:
 
 >[{netconf, [
-  {host, "127.0.0.1"}
-  , {port, 8989}
-  , {device_module, fake_device}
-  , **{ssh_credentials, [{"felipe", "password"}]}**
-]}].
+>  {host, "127.0.0.1"}
+>  , {port, 8989}
+>  , {device_module, fake_device}
+>  , **{ssh_credentials, [{"felipe", "password"}]}**
+>]}].
 
 ## Device Callback
 
