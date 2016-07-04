@@ -1,0 +1,12 @@
+{application, 'netconf',
+  [{description, "A Netconf RFC6241 implementation written in Erlang"},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {env,[]},
+    {modules, []},
+    {applications, [kernel
+                    , stdlib
+                    , ssh
+                    , xmerl]},
+    {mod, {netconf, []}}
+  ]}.
